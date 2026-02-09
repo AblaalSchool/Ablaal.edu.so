@@ -36,7 +36,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[600px] flex items-center overflow-hidden">
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image src="/images/design.jpg" alt="Ablaal School Students" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0d7377]/95 via-[#0d7377]/80 to-[#0d7377]/60" />
@@ -46,7 +46,7 @@ export default function HomePage() {
           <div className="max-w-2xl text-white animate-fade-in">
             <div className="flex items-center gap-2 mb-4">
               <div className="h-1 w-12 bg-amber-400 rounded" />
-              <span className="text-amber-400 font-medium">Since 1988</span>
+              <span className="text-amber-400 font-medium">{t("since1988")}</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance leading-tight">
               {t("heroTitle")}
@@ -70,13 +70,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-
-        {/* Decorative elements */}
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-[#0d7377]/5">
+      <section className="py-16 bg-[#0d7377]/5">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center stagger-children">
             <div className="p-6">

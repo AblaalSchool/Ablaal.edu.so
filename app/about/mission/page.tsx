@@ -10,33 +10,33 @@ export default function MissionVisionPage() {
   const values = [
     {
       icon: BookOpen,
-      title: "Academic Excellence",
-      description: "Striving for the highest standards in education and learning outcomes.",
+      title: t("academicExcellence"),
+      description: t("academicExcellenceDesc"),
     },
     {
       icon: Heart,
-      title: "Islamic Values",
-      description: "Grounding education in strong moral and spiritual principles.",
+      title: t("islamicValuesValue"),
+      description: t("islamicValuesValueDesc"),
     },
     {
       icon: Users,
-      title: "Community Service",
-      description: "Developing responsible citizens who contribute to society.",
+      title: t("communityService"),
+      description: t("communityServiceDesc"),
     },
     {
       icon: Lightbulb,
-      title: "Innovation",
-      description: "Embracing modern teaching methods and technologies.",
+      title: t("innovation"),
+      description: t("innovationDesc"),
     },
     {
       icon: Shield,
-      title: "Integrity",
-      description: "Maintaining honesty and transparency in all our endeavors.",
+      title: t("integrity"),
+      description: t("integrityDesc"),
     },
     {
       icon: Globe,
-      title: "Global Perspective",
-      description: "Preparing students for success in an interconnected world.",
+      title: t("globalPerspective"),
+      description: t("globalPerspectiveDesc"),
     },
   ]
 
@@ -52,8 +52,7 @@ export default function MissionVisionPage() {
             <span className="text-amber-400 font-medium mb-2 block">{t("about")}</span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("missionVision")}</h1>
             <p className="text-lg text-white/90">
-              Our mission and vision guide everything we do at Ablaal Schools, shaping the future of education in
-              Somalia.
+              {t("missionVisionHeroDesc")}
             </p>
           </div>
         </div>
@@ -70,26 +69,24 @@ export default function MissionVisionPage() {
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Target className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-2xl font-bold text-foreground mb-4">Our Mission</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">{t("ourMission")}</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  To provide accessible, high-quality education that combines academic excellence with Islamic values,
-                  empowering students to become knowledgeable, ethical, and responsible citizens who contribute
-                  positively to their communities and the world.
+                  {t("missionDescription")}
                 </p>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <h3 className="font-semibold text-foreground mb-2">We are committed to:</h3>
+                  <h3 className="font-semibold text-foreground mb-2">{t("weAreCommittedTo")}</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-primary" />
-                      Delivering excellence in education
+                      {t("deliveringExcellence")}
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-primary" />
-                      Nurturing moral and spiritual growth
+                      {t("nurturingMoralGrowth")}
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-primary" />
-                      Building future leaders
+                      {t("buildingFutureLeaders")}
                     </li>
                   </ul>
                 </div>
@@ -103,26 +100,24 @@ export default function MissionVisionPage() {
                 <div className="w-16 h-16 rounded-full bg-amber-500/10 flex items-center justify-center mb-6">
                   <Eye className="h-8 w-8 text-amber-500" />
                 </div>
-                <h2 className="text-2xl font-bold text-foreground mb-4">Our Vision</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">{t("ourVision")}</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  To be the leading educational institution in Somalia, recognized for producing graduates who excel
-                  academically, embody strong moral character, and drive positive change in society through their
-                  leadership and service.
+                  {t("visionDescription")}
                 </p>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <h3 className="font-semibold text-foreground mb-2">We aspire to:</h3>
+                  <h3 className="font-semibold text-foreground mb-2">{t("weAspireTo")}</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-amber-500" />
-                      Set the standard for education in Somalia
+                      {t("setStandard")}
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-amber-500" />
-                      Inspire lifelong learning
+                      {t("inspireLifelongLearning")}
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-amber-500" />
-                      Create global citizens
+                      {t("createGlobalCitizens")}
                     </li>
                   </ul>
                 </div>
@@ -136,8 +131,8 @@ export default function MissionVisionPage() {
       <section className="py-16 bg-[#0d7377]/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-amber-500 font-medium mb-2 block">What Guides Us</span>
-            <h2 className="text-3xl font-bold text-foreground">Our Core Values</h2>
+            <span className="text-amber-500 font-medium mb-2 block">{t("whatGuidesUs")}</span>
+            <h2 className="text-3xl font-bold text-foreground">{t("ourCoreValues")}</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -162,10 +157,9 @@ export default function MissionVisionPage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-6xl text-primary/20 mb-4">"</div>
             <blockquote className="text-2xl md:text-3xl font-medium text-foreground mb-6 text-balance">
-              Education is not preparation for life; education is life itself. At Ablaal Schools, we live this truth
-              every day.
+              {t("missionQuote")}
             </blockquote>
-            <p className="text-muted-foreground">— Founding Philosophy of Ablaal Schools</p>
+            <p className="text-muted-foreground">— {t("foundingPhilosophy")}</p>
           </div>
         </div>
       </section>

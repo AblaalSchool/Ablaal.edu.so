@@ -14,46 +14,46 @@ export default function PrimaryPage() {
     {
       icon: Languages,
       name: t("englishLanguage"),
-      description: "Reading, writing, grammar, and communication skills",
+      description: t("readingWriting"),
       color: "bg-blue-500",
     },
     {
       icon: BookText,
       name: t("somaliLanguage"),
-      description: "Native language mastery and literature",
+      description: t("nativeLanguage"),
       color: "bg-green-500",
     },
     {
       icon: Calculator,
       name: t("mathematics"),
-      description: "Numbers, arithmetic, geometry, and problem-solving",
+      description: t("numbersArithmetic"),
       color: "bg-purple-500",
     },
     {
       icon: Beaker,
       name: t("science"),
-      description: "Basic sciences, nature studies, and experiments",
+      description: t("basicSciences"),
       color: "bg-orange-500",
     },
     {
       icon: Globe,
       name: t("socialStudies"),
-      description: "History, geography, and civic education",
+      description: t("historyCivic"),
       color: "bg-teal-500",
     },
     {
       icon: Moon,
       name: t("islamicStudies"),
-      description: "Quran, Islamic principles, and Arabic basics",
+      description: t("quranIslamic"),
       color: "bg-emerald-600",
     },
   ]
 
   const features = [
-    { label: "Class Size", value: "25 Students Max" },
-    { label: "Teacher Ratio", value: "1:15" },
-    { label: "Duration", value: "8 Years" },
-    { label: "Languages", value: "English & Somali" },
+    { label: t("classSize"), value: t("studentsMax25") },
+    { label: t("teacherRatio"), value: "1:15" },
+    { label: t("duration"), value: t("years8") },
+    { label: t("languages"), value: t("englishSomali") },
   ]
 
   return (
@@ -73,8 +73,7 @@ export default function PrimaryPage() {
               <span className="text-amber-400 font-medium mb-2 block">{t("academics")}</span>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("primarySchool")}</h1>
               <p className="text-lg text-white/90 mb-6">
-                Building strong foundations for lifelong learning. Our primary program (Grades 1-8) focuses on
-                developing essential skills in a nurturing environment.
+                {t("primaryHeroDesc")}
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild className="bg-amber-500 hover:bg-amber-600 text-white">
@@ -167,15 +166,15 @@ export default function PrimaryPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Foundation literacy and numeracy skills</span>
+                    <span className="text-muted-foreground">{t("foundationLiteracy")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Introduction to basic sciences and social studies</span>
+                    <span className="text-muted-foreground">{t("introBasicSciences")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Character development and Islamic values</span>
+                    <span className="text-muted-foreground">{t("characterDevelopment")}</span>
                   </li>
                 </ul>
               </CardContent>
@@ -189,19 +188,19 @@ export default function PrimaryPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Advanced language and communication skills</span>
+                    <span className="text-muted-foreground">{t("advancedLanguage")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Pre-algebra and geometry</span>
+                    <span className="text-muted-foreground">{t("preAlgebra")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Comprehensive science curriculum</span>
+                    <span className="text-muted-foreground">{t("comprehensiveScience")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Preparation for secondary education</span>
+                    <span className="text-muted-foreground">{t("prepSecondary")}</span>
                   </li>
                 </ul>
               </CardContent>

@@ -10,28 +10,28 @@ export default function LeadershipPage() {
   const principals = [
     {
       name: "Ahmed Sali",
-      role: "Principal - Primary School",
-      description: "Leading our primary education with 15 years of experience in curriculum development.",
+      role: t("principalPrimary"),
+      description: t("principalPrimaryDesc"),
     },
     {
       name: "Ustaad Sahal",
-      role: "Principal - Secondary School",
-      description: "Expert in secondary education with focus on preparing students for higher education.",
+      role: t("principalSecondary"),
+      description: t("principalSecondaryDesc"),
     },
     {
       name: "Mohamed Ali",
-      role: "Academic Director",
-      description: "Overseeing curriculum standards and academic excellence across all programs.",
+      role: t("academicDirector"),
+      description: t("academicDirectorDesc"),
     },
     {
       name: "Halima Yusuf",
-      role: "Student Affairs Director",
-      description: "Dedicated to student welfare and creating a supportive learning environment.",
+      role: t("studentAffairsDirector"),
+      description: t("studentAffairsDirectorDesc"),
     },
     {
       name: "Abdi Karim",
-      role: "Operations Director",
-      description: "Ensuring smooth operations and maintaining our facilities to the highest standards.",
+      role: t("operationsDirector"),
+      description: t("operationsDirectorDesc"),
     },
   ]
 
@@ -47,7 +47,7 @@ export default function LeadershipPage() {
             <span className="text-amber-400 font-medium mb-2 block">{t("about")}</span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("leadership")}</h1>
             <p className="text-lg text-white/90">
-              Meet the dedicated team that leads Ablaal Schools towards excellence in education.
+              {t("leadershipHeroDesc")}
             </p>
           </div>
         </div>
@@ -58,8 +58,8 @@ export default function LeadershipPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <span className="text-amber-500 font-medium mb-2 block">Our Founder</span>
-              <h2 className="text-3xl font-bold text-foreground">The Visionary Behind Ablaal Schools</h2>
+              <span className="text-amber-500 font-medium mb-2 block">{t("ourFounder")}</span>
+              <h2 className="text-3xl font-bold text-foreground">{t("visionaryBehind")}</h2>
             </div>
 
             <Card className="overflow-hidden">
@@ -74,17 +74,13 @@ export default function LeadershipPage() {
                     />
                   </div>
                   <div className="p-8 flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">Founder & Chairman</h3>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">{t("founderChairman")}</h3>
                     <p className="text-primary font-medium mb-4">Ablaal Schools</p>
                     <p className="text-muted-foreground mb-4">
-                      Since founding Ablaal Schools in 1988, our visionary founder has dedicated his life to
-                      transforming education in Somalia. His commitment to providing quality, affordable education has
-                      impacted thousands of families and shaped the future of countless students.
+                      {t("leadershipFounderDesc1")}
                     </p>
                     <p className="text-muted-foreground">
-                      Under his guidance, Ablaal Schools has grown from a small school to one of the most respected
-                      educational institutions in Somalia, producing graduates who excel in various fields both
-                      nationally and internationally.
+                      {t("leadershipFounderDesc2")}
                     </p>
                   </div>
                 </div>
@@ -98,10 +94,10 @@ export default function LeadershipPage() {
       <section className="py-16 bg-[#0d7377]/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-amber-500 font-medium mb-2 block">School Leadership</span>
-            <h2 className="text-3xl font-bold text-foreground">Our Principals & Directors</h2>
+            <span className="text-amber-500 font-medium mb-2 block">{t("schoolLeadership")}</span>
+            <h2 className="text-3xl font-bold text-foreground">{t("principalsDirectors")}</h2>
             <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-              Experienced educators dedicated to maintaining the highest standards of academic excellence.
+              {t("principalsDesc")}
             </p>
           </div>
 
@@ -138,10 +134,9 @@ export default function LeadershipPage() {
             <CardContent className="p-8 md:p-12 text-center">
               <div className="text-5xl text-white/30 mb-4">"</div>
               <blockquote className="text-xl md:text-2xl mb-6 text-balance">
-                Our leadership is built on the foundation of service, dedication, and an unwavering commitment to
-                student success. Together, we shape the future of Somalia, one student at a time.
+                {t("leadershipQuote")}
               </blockquote>
-              <p className="text-white/80">— The Leadership Team of Ablaal Schools</p>
+              <p className="text-white/80">— {t("leadershipTeamQuoteAuthor")}</p>
             </CardContent>
           </Card>
         </div>

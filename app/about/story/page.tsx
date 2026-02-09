@@ -11,11 +11,11 @@ export default function OurStoryPage() {
   const { t } = useLanguage()
 
   const milestones = [
-    { year: "1988", event: "Ablaal Schools founded in Mogadishu", icon: Calendar },
-    { year: "1995", event: "Expanded to secondary education", icon: BookOpen },
-    { year: "2005", event: "Graduated 1000th student", icon: Users },
-    { year: "2015", event: "Modernized facilities and curriculum", icon: Award },
-    { year: "2024", event: "Celebrating 36 years of excellence", icon: Award },
+    { year: "1988", event: t("milestone1988"), icon: Calendar },
+    { year: "1995", event: t("milestone1995"), icon: BookOpen },
+    { year: "2005", event: t("milestone2005"), icon: Users },
+    { year: "2015", event: t("milestone2015"), icon: Award },
+    { year: "2024", event: t("milestone2024"), icon: Award },
   ]
 
   return (
@@ -31,8 +31,7 @@ export default function OurStoryPage() {
             <span className="text-amber-400 font-medium mb-2 block">{t("about")}</span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("ourStory")}</h1>
             <p className="text-lg text-white/90">
-              Discover the journey of Ablaal Schools - from a small educational initiative to one of Somalia's most
-              respected institutions.
+              {t("storyHeroDesc")}
             </p>
           </div>
         </div>
@@ -43,22 +42,11 @@ export default function OurStoryPage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">A Legacy of Excellence</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">{t("legacyOfExcellence")}</h2>
               <div className="space-y-4 text-muted-foreground">
-                <p>
-                  Ablaal Schools was founded in 1988 with a vision to provide quality education to the children of
-                  Somalia. What started as a small school with just a handful of students has grown into one of the most
-                  respected educational institutions in the country.
-                </p>
-                <p>
-                  Throughout the decades, we have remained committed to our founding principles: academic excellence,
-                  Islamic values, and community service. Our dedication to these principles has helped us navigate
-                  through challenging times while maintaining our focus on student success.
-                </p>
-                <p>
-                  Today, Ablaal Schools stands as a beacon of hope and opportunity, offering primary and secondary
-                  education to thousands of students who dream of a brighter future.
-                </p>
+                <p>{t("storyParagraph1")}</p>
+                <p>{t("storyParagraph2")}</p>
+                <p>{t("storyParagraph3")}</p>
               </div>
             </div>
             <div className="relative">
@@ -85,20 +73,17 @@ export default function OurStoryPage() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <span className="text-amber-500 font-medium mb-2 block">The Founder</span>
-              <h2 className="text-3xl font-bold text-foreground mb-6">A Vision That Transformed Education</h2>
+              <span className="text-amber-500 font-medium mb-2 block">{t("theFounder")}</span>
+              <h2 className="text-3xl font-bold text-foreground mb-6">{t("visionTransformed")}</h2>
               <blockquote className="text-lg italic text-muted-foreground border-l-4 border-primary pl-4 mb-6">
-                "When I started Ablaal Schools in 1988, my dream was simple - to give every child access to quality
-                education. Today, seeing thousands of our graduates succeed in various fields fills me with immense
-                pride and gratitude."
+                {t("founderStoryQuote")}
               </blockquote>
               <p className="text-muted-foreground mb-6">
-                Our founder's unwavering commitment to education has been the driving force behind Ablaal Schools'
-                success. His vision continues to guide our mission of nurturing tomorrow's leaders.
+                {t("founderStoryDesc")}
               </p>
               <Button asChild className="bg-primary hover:bg-primary/90">
                 <Link href="/about/leadership">
-                  Meet Our Leadership
+                  {t("meetOurLeadership")}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -111,8 +96,8 @@ export default function OurStoryPage() {
       <section className="py-16 bg-[#0d7377]/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-amber-500 font-medium mb-2 block">Our Journey</span>
-            <h2 className="text-3xl font-bold text-foreground">Milestones Through the Years</h2>
+            <span className="text-amber-500 font-medium mb-2 block">{t("ourJourney")}</span>
+            <h2 className="text-3xl font-bold text-foreground">{t("milestonesTitle")}</h2>
           </div>
 
           <div className="max-w-4xl mx-auto">
@@ -144,9 +129,9 @@ export default function OurStoryPage() {
         <div className="container mx-auto px-4">
           <Card className="bg-gradient-to-br from-[#0d7377] to-[#14919B] text-white overflow-hidden">
             <CardContent className="p-8 md:p-12 text-center">
-              <h2 className="text-3xl font-bold mb-4">Be Part of Our Story</h2>
+              <h2 className="text-3xl font-bold mb-4">{t("bePartOfStory")}</h2>
               <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                Join the thousands of families who have trusted Ablaal Schools with their children's education.
+                {t("bePartOfStoryDesc")}
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Button asChild className="bg-amber-500 hover:bg-amber-600 text-white">
