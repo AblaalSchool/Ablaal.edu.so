@@ -127,7 +127,7 @@ export function Footer() {
       {/* Copyright */}
       <div className="border-t border-white/20">
         <div className="container mx-auto px-4 py-4">
-          <p className="text-center text-sm text-white/60">© 2026 Ablaal Schools. {t("allRightsReserved")}.</p>
+          <p className="text-center text-sm text-white/60">© 1988-2026 Ablaal Schools. {t("allRightsReserved")}.</p>
         </div>
       </div>
     </footer>

@@ -205,9 +205,9 @@ export default function HomePage() {
                 style={{ animationDelay: "1s" }}
               />
               <Image
-                src="/images/baba-20talking.jpg"
+                src="/images/prof ablaal.jpg"
                 alt="Founder of Ablaal Schools"
-                width={500}
+                width={700}
                 height={600}
                 className="rounded-2xl shadow-2xl relative z-10 object-cover"
               />
