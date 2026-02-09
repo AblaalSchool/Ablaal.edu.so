@@ -61,12 +61,11 @@ export default function ApplyPage() {
                 <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
                   <CheckCircle2 className="h-10 w-10 text-green-600" />
                 </div>
-                <h1 className="text-3xl font-bold text-foreground mb-4">Application Submitted!</h1>
+                <h1 className="text-3xl font-bold text-foreground mb-4">{t("applicationSubmitted")}</h1>
                 <p className="text-muted-foreground mb-6">
-                  Thank you for applying to Ablaal Schools. We have received your application and will contact you
-                  within 5-7 business days.
+                  {t("applicationSubmittedDesc")}
                 </p>
-                <p className="text-sm text-muted-foreground">A confirmation has been sent to your email address.</p>
+                <p className="text-sm text-muted-foreground">{t("confirmationSent")}</p>
               </CardContent>
             </Card>
           </div>
@@ -88,12 +87,11 @@ export default function ApplyPage() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-6">
               <Sparkles className="h-4 w-4 text-amber-400" />
-              <span className="text-sm font-medium">Join 5000+ Graduates</span>
+              <span className="text-sm font-medium">{t("joinGraduates")}</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">{t("startApplication")}</h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-              Take the first step towards excellence. Fill out the form below and our admissions team will guide you
-              through the process.
+              {t("applyHeroDesc")}
             </p>
           </div>
         </div>
@@ -105,7 +103,7 @@ export default function ApplyPage() {
           <div className="max-w-4xl mx-auto">
             {/* Progress Indicators */}
             <div className="flex justify-center gap-4 mb-12">
-              {["Student Info", "Guardian Info", "Review"].map((step, index) => (
+              {[t("studentInfo"), t("guardianInfo"), t("review")].map((step, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
@@ -129,7 +127,7 @@ export default function ApplyPage() {
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <User className="h-5 w-5 text-primary" />
                       </div>
-                      <h2 className="text-xl font-bold text-foreground">Student Information</h2>
+                      <h2 className="text-xl font-bold text-foreground">{t("studentInformation")}</h2>
                     </div>
 
                     <div className="grid sm:grid-cols-2 gap-6">
@@ -141,7 +139,7 @@ export default function ApplyPage() {
                           id="firstName"
                           name="firstName"
                           required
-                          placeholder="Enter first name"
+                          placeholder={t("enterFirstName")}
                           className="h-12 bg-background"
                         />
                       </div>
@@ -153,7 +151,7 @@ export default function ApplyPage() {
                           id="lastName"
                           name="lastName"
                           required
-                          placeholder="Enter last name"
+                          placeholder={t("enterLastName")}
                           className="h-12 bg-background"
                         />
                       </div>
@@ -195,7 +193,7 @@ export default function ApplyPage() {
                         </Label>
                         <Select name="grade" required>
                           <SelectTrigger className="h-12 bg-background">
-                            <SelectValue placeholder="Select grade" />
+                            <SelectValue placeholder={t("selectGrade")} />
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="grade-1">Grade 1</SelectItem>
@@ -215,12 +213,12 @@ export default function ApplyPage() {
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="previousSchool" className="text-foreground">
-                          Previous School
+                          {t("previousSchool")}
                         </Label>
                         <Input
                           id="previousSchool"
                           name="previousSchool"
-                          placeholder="Name of previous school"
+                          placeholder={t("nameOfPreviousSchool")}
                           className="h-12 bg-background"
                         />
                       </div>
@@ -233,13 +231,13 @@ export default function ApplyPage() {
                       <div className="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center">
                         <GraduationCap className="h-5 w-5 text-amber-500" />
                       </div>
-                      <h2 className="text-xl font-bold text-foreground">Parent/Guardian Information</h2>
+                      <h2 className="text-xl font-bold text-foreground">{t("parentGuardianInfo")}</h2>
                     </div>
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="parentName" className="text-foreground">
-                          Parent/Guardian Name *
+                          {t("parentGuardianName")}
                         </Label>
                         <Input
                           id="parentName"
@@ -251,7 +249,7 @@ export default function ApplyPage() {
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="parentPhone" className="text-foreground">
-                          Parent/Guardian Phone *
+                          {t("parentGuardianPhone")}
                         </Label>
                         <div className="relative">
                           <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
@@ -274,17 +272,17 @@ export default function ApplyPage() {
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <FileText className="h-5 w-5 text-primary" />
                       </div>
-                      <h2 className="text-xl font-bold text-foreground">Additional Information</h2>
+                      <h2 className="text-xl font-bold text-foreground">{t("additionalInfo")}</h2>
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="message" className="text-foreground">
-                        Why do you want to join Ablaal Schools?
+                        {t("whyJoinAblaal")}
                       </Label>
                       <Textarea
                         id="message"
                         name="message"
-                        placeholder="Tell us about yourself and why you're interested in joining Ablaal Schools..."
+                        placeholder={t("whyJoinPlaceholder")}
                         className="min-h-[120px] bg-background resize-none"
                       />
                     </div>
@@ -300,8 +298,8 @@ export default function ApplyPage() {
                     >
                       {isSubmitting ? (
                         <>
-                          <span className="animate-spin mr-2">⏳</span>
-                          Submitting...
+                          <span className="animate-spin mr-2">{"..."}</span>
+                          {t("submitting")}
                         </>
                       ) : (
                         <>
@@ -311,7 +309,7 @@ export default function ApplyPage() {
                       )}
                     </Button>
                     <p className="text-center text-sm text-muted-foreground mt-4">
-                      By submitting this form, you agree to our terms and conditions.
+                      {t("termsAgree")}
                     </p>
                   </div>
                 </form>

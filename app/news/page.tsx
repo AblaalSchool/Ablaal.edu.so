@@ -126,7 +126,7 @@ export default function NewsPage() {
                       </span>
                     </div>
                       <Button className="w-fit bg-primary hover:bg-primary/90">
-                      {t("READ MORE")}
+                      {t("readMore")}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                     
@@ -210,12 +210,12 @@ export default function NewsPage() {
               >
                 <CardContent className="p-6 text-center">
                   <Calendar className="h-12 w-12 mx-auto mb-4 text-amber-400 animate-float" />
-                  <h3 className="font-bold text-lg mb-2">School Calendar</h3>
+                  <h3 className="font-bold text-lg mb-2">{t("schoolCalendar")}</h3>
                   <p className="text-sm text-white/80 mb-4">
-                    Download our complete academic calendar for important dates.
+                    {t("downloadCalendarDesc")}
                   </p>
                   <Button variant="secondary" size="sm" className="bg-white text-primary hover:bg-white/90">
-                    Download Calendar
+                    {t("downloadCalendar")}
                   </Button>
                 </CardContent>
               </Card>

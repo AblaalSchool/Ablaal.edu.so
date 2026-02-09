@@ -13,45 +13,45 @@ export default function ApplicationProcessPage() {
     {
       phase: t("phase1"),
       title: t("applicationSubmission"),
-      duration: "1 Day",
+      duration: t("day1"),
       icon: FileCheck,
       items: [
-        "Complete online application form",
-        "Upload required documents",
-        "Pay application fee (if applicable)",
-        "Receive confirmation email",
+        t("completeOnlineForm"),
+        t("uploadDocuments"),
+        t("payApplicationFee"),
+        t("receiveConfirmation"),
       ],
     },
     {
       phase: t("phase2"),
       title: t("documentReview"),
-      duration: "2-3 Days",
+      duration: t("days2to3"),
       icon: Clock,
       items: [
-        "Review of academic records",
-        "Verification of documents",
-        "Assessment of eligibility",
-        "Initial screening",
+        t("reviewAcademicRecords"),
+        t("verificationDocuments"),
+        t("assessmentEligibility"),
+        t("initialScreening"),
       ],
     },
     {
       phase: t("phase3"),
       title: t("interviewAssessment"),
-      duration: "1 Day",
+      duration: t("day1"),
       icon: Users,
       items: [
-        "Student interview",
-        "Parent/Guardian meeting",
-        "Academic assessment (if required)",
-        "Tour of facilities",
+        t("studentInterview"),
+        t("parentMeeting"),
+        t("academicAssessment"),
+        t("tourFacilities"),
       ],
     },
     {
       phase: t("phase4"),
       title: t("decisionEnrollment"),
-      duration: "2-3 Days",
+      duration: t("days2to3"),
       icon: Mail,
-      items: ["Admission decision communicated", "Acceptance letter issued", "Enrollment documents", "Fee payment"],
+      items: [t("admissionDecision"), t("acceptanceLetter"), t("enrollmentDocuments"), t("feePayment")],
     },
   ]
 
@@ -64,7 +64,7 @@ export default function ApplicationProcessPage() {
             <span className="text-amber-400 font-medium mb-2 block">{t("admissions")}</span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("applicationProcess")}</h1>
             <p className="text-lg text-white/90">
-              Understanding our admission timeline helps you prepare for a smooth application experience.
+              {t("processHeroDesc")}
             </p>
           </div>
         </div>

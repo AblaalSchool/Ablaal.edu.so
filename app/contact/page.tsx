@@ -68,7 +68,7 @@ export default function ContactPage() {
     {
       icon: Clock,
       title: t("workingHours"),
-      details: ["Saturday - Thursday", "7:00 AM - 6:00 PM"],
+      details: [t("saturdayThursday"), t("timeRange")],
       color: "bg-amber-500",
     },
   ]

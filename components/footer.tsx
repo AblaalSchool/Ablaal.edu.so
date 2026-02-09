@@ -28,8 +28,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-white/80 leading-relaxed">
-              Ablaal Schools: A legacy of academic excellence and affordable education, serving the Somali community
-              since 1988.
+              {t("footerDescription")}
             </p>
           </div>
 
@@ -117,8 +116,8 @@ export function Footer() {
             </div>
             <div>
               <h4 className="font-bold text-lg mb-2">{t("workingHours")}</h4>
-              <p className="text-sm text-white/80">Saturday - Thursday</p>
-              <p className="text-sm text-white/80">7:00 AM - 6:00 PM</p>
+              <p className="text-sm text-white/80">{t("saturdayThursday")}</p>
+              <p className="text-sm text-white/80">{t("timeRange")}</p>
             </div>
           </div>
         </div>

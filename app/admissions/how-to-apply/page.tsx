@@ -12,38 +12,38 @@ export default function HowToApplyPage() {
   const steps = [
     {
       icon: ClipboardList,
-      title: "Review Requirements",
-      description: "Check the admission requirements for your desired grade level.",
+      title: t("reviewRequirements"),
+      description: t("reviewRequirementsDesc"),
       link: "/admissions/requirements",
     },
     {
       icon: FileText,
-      title: "Complete Application",
-      description: "Fill out the online application form with accurate information.",
+      title: t("completeApplication"),
+      description: t("completeApplicationDesc"),
       link: "/admissions/apply",
     },
     {
       icon: Send,
-      title: "Submit Documents",
-      description: "Upload required documents including previous school records.",
+      title: t("submitDocuments"),
+      description: t("submitDocumentsDesc"),
       link: "/admissions/process",
     },
     {
       icon: MessageSquare,
-      title: "Interview",
-      description: "Attend an interview with our admissions team.",
+      title: t("interview"),
+      description: t("interviewDesc"),
       link: "/contact",
     },
     {
       icon: Calendar,
-      title: "Await Decision",
-      description: "Receive admission decision within 2 weeks of interview.",
+      title: t("awaitDecision"),
+      description: t("awaitDecisionDesc"),
       link: "/admissions/process",
     },
     {
       icon: CheckCircle,
-      title: "Enroll",
-      description: "Complete enrollment and prepare for the school year.",
+      title: t("enroll"),
+      description: t("enrollDesc"),
       link: "/admissions/tuition",
     },
   ]
@@ -60,7 +60,7 @@ export default function HowToApplyPage() {
             <span className="text-amber-400 font-medium mb-2 block">{t("admissions")}</span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("howToApply")}</h1>
             <p className="text-lg text-white/90">
-              Follow our simple admission process to join the Ablaal Schools family.
+              {t("followSimpleProcess")}
             </p>
           </div>
         </div>
@@ -70,8 +70,8 @@ export default function HowToApplyPage() {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-amber-500 font-medium mb-2 block">Application Process</span>
-            <h2 className="text-3xl font-bold text-foreground">Six Simple Steps to Enrollment</h2>
+            <span className="text-amber-500 font-medium mb-2 block">{t("applicationProcessLabel")}</span>
+            <h2 className="text-3xl font-bold text-foreground">{t("sixSimpleSteps")}</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -88,7 +88,7 @@ export default function HowToApplyPage() {
                     href={step.link}
                     className="text-primary text-sm font-medium inline-flex items-center hover:underline"
                   >
-                    Learn More
+                    {t("learnMore")}
                     <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
                 </CardContent>
@@ -104,8 +104,8 @@ export default function HowToApplyPage() {
           <Card className="max-w-4xl mx-auto bg-gradient-to-r from-[#0d7377] to-[#14919B] text-white">
             <CardContent className="p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
-                <h2 className="text-2xl font-bold mb-2">Ready to Get Started?</h2>
-                <p className="text-white/90">Begin your application today and join our community.</p>
+                <h2 className="text-2xl font-bold mb-2">{t("readyToGetStarted")}</h2>
+                <p className="text-white/90">{t("readyToGetStartedDesc")}</p>
               </div>
               <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-white whitespace-nowrap">
                 <Link href="/admissions/apply">

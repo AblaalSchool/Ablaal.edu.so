@@ -86,10 +86,10 @@ export default function SecondaryPage() {
   ]
 
   const features = [
-    { label: "Class Size", value: "30 Students Max" },
-    { label: "Teacher Ratio", value: "1:20" },
-    { label: "Duration", value: "4 Years" },
-    { label: "Certification", value: "National Exams" },
+    { label: t("classSize"), value: t("studentsMax30") },
+    { label: t("teacherRatio"), value: "1:20" },
+    { label: t("duration"), value: t("years4") },
+    { label: t("certification"), value: t("nationalExams") },
   ]
 
   return (
@@ -109,8 +109,7 @@ export default function SecondaryPage() {
               <span className="text-amber-100 font-medium mb-2 block">{t("academics")}</span>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("secondarySchool")}</h1>
               <p className="text-lg text-white/90 mb-6">
-                Preparing students for higher education and career success. Our secondary program (Grades 9-12) offers
-                advanced academics and practical skills.
+                {t("secondaryHeroDesc")}
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild className="bg-white text-amber-600 hover:bg-white/90">
@@ -203,19 +202,19 @@ export default function SecondaryPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Core subjects in sciences and humanities</span>
+                    <span className="text-muted-foreground">{t("coreSubjects")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Introduction to specialized subjects</span>
+                    <span className="text-muted-foreground">{t("introSpecialized")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Career guidance and exploration</span>
+                    <span className="text-muted-foreground">{t("careerGuidance")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Foundation for national examinations</span>
+                    <span className="text-muted-foreground">{t("foundationNational")}</span>
                   </li>
                 </ul>
               </CardContent>
@@ -229,19 +228,19 @@ export default function SecondaryPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Advanced subject specialization</span>
+                    <span className="text-muted-foreground">{t("advancedSpecialization")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Intensive exam preparation</span>
+                    <span className="text-muted-foreground">{t("intensiveExamPrep")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">University application support</span>
+                    <span className="text-muted-foreground">{t("universitySupport")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <BookOpen className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Leadership and service programs</span>
+                    <span className="text-muted-foreground">{t("leadershipServicePrograms")}</span>
                   </li>
                 </ul>
               </CardContent>
